@@ -1,8 +1,8 @@
 export class ReactiveStorage {
 	trackMap = {};
 	storage = 'localStorage';
-	constructor(type = 'local') {
-		if (type === 'local') {
+	constructor(type = 'localStorage') {
+		if (type === 'localStorage') {
 			this.storage = 'localStorage';
 		} else {
 			this.storage = 'sessionStorage';
